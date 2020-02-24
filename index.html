@@ -14,43 +14,48 @@
       color: white;
     }
 
-    .topnav {
+
+
+    nav {
       position: relative;
     }
 
-    .topnav #myLinks {
+    #myLinks {
       display: none;
     }
 
-    .topnav a {
-      color: white;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
+    nav a {
       display: block;
+      text-decoration: none;
+
+      padding: 14px 16px;
+
+      font-size: 17px;
+      color: white;
     }
 
-    .topnav a.navbar-icon {
-      background: black;
 
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li:hover{
+      display: block;
+      background-color: #EAEAEA;
+    }
+
+    #navbar-icon {
       display: block;
 
       position: absolute;
       right: 0;
       top: 0;
+
+      background: black;
     }
 
-    ul {
-      list-style-type: none;
-
-      margin: 0;
-      padding: 0;
-    }
-
-    li:hover{
-      display: block;
-      background-color: #EAEAEA;
-    }
   </style>
 </head>
 <body>
@@ -60,9 +65,9 @@
 
 
     <!-- Top Navigation Menu -->
-    <nav class="topnav">
+    <nav>
 
-      <a href="#home" class="active">LogoHere</a>
+      <a class="branding">LogoHere</a>
 
       <ul id="myLinks">
         <a href="https://www.google.com"><li>News</li></a>
@@ -70,7 +75,7 @@
         <a href="https://www.yahoo.com"><li>About</li></a>
       </ul>
 
-      <a id="icon" class="navbar-icon">
+      <a id="navbar-icon">
         <i class="fa fa-bars"></i>
       </a>
 

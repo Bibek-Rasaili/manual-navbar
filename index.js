@@ -1,4 +1,4 @@
-document.getElementById('icon').addEventListener("click", myFunction);
+document.getElementById('navbar-icon').addEventListener("click", myFunction);
 
 function myFunction() {
   var x = document.getElementById("myLinks");
