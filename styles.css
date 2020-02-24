@@ -1,0 +1,55 @@
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+
+  background-color: #555;
+  height: 500px;
+  color: white;
+}
+/* stimulates mobile */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li:hover{
+  display: block;
+  /* each line! */
+  background-color: #EAEAEA;
+}
+/* general list/nav-link styles */
+
+
+/* allows navbar-icon
+to go absolute - to position (top-right)  */
+nav {
+  position: relative;
+}
+
+/* hides the nav-item to start */
+#myLinks {
+  display: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+
+  padding: 14px 16px;
+
+  font-size: 17px;
+  color: white;
+}
+
+
+/* positions navbar icon */
+#navbar-icon {
+  /* display: block; */
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  background: black;
+  padding: 14px 16px;
+  font-size: 17px;
+}
