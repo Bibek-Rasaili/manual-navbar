@@ -27,7 +27,7 @@ nav {
 }
 
 /* hides the nav-item to start */
-#myLinks {
+#navbar-items {
   display: none;
 }
 

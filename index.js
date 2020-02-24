@@ -1,7 +1,6 @@
-document.getElementById('navbar-icon').addEventListener("click", myFunction);
+document.getElementById('navbar-icon').addEventListener("click", function(){
 
-function myFunction() {
-  var navItems = document.getElementById("myLinks");
+  var navItems = document.getElementById("navbar-items");
 
 //this toggles the nav items
 //If navbar is open (block) then hide (none)
@@ -14,4 +13,5 @@ function myFunction() {
     navItems.style.display = "block";
     //else if its hidden, then show (display:block)
   }
-}
+
+});
