@@ -37,7 +37,7 @@ nav {
 }
 
 ul a {
-  display: inline;
+  /* display: inline; */
   text-decoration: none;
 
   padding: 14px 16px;
@@ -47,7 +47,6 @@ ul a {
 }
 
 .branding {
-
     padding: 14px 16px;
 }
 
@@ -88,6 +87,17 @@ container is set to 480px*/
     display: none;
   }
 
+  nav {
+    display: block;
+  }
+
+  .branding {
+    display: block;
+  }
+
+  ul {
+    text-align: center;
+  }
 
   li:hover{
     display: block;
