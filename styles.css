@@ -8,14 +8,15 @@
 }
 
 ul {
+  /* ul layout*/
+  display: flex;
+  flex-direction: row;
+  margin-left: auto !important;
+
+/* ul styling*/
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-li:hover{
-  display: block;
-  /* each line! */
-  background-color: #EAEAEA;
 }
 /* general list/nav-link styles */
 
@@ -24,15 +25,19 @@ li:hover{
 to go absolute - to position (top-right)  */
 nav {
   position: relative;
+
+  padding: 14px 16px;
+
+  display: flex;
 }
 
 /* hides the nav-item to start */
 #navbar-items {
-  display: none;
+
 }
 
-nav a {
-  display: block;
+ul a {
+  display: inline;
   text-decoration: none;
 
   padding: 14px 16px;
@@ -41,10 +46,18 @@ nav a {
   color: white;
 }
 
+.branding {
 
-/* positions navbar icon */
+    padding: 14px 16px;
+}
+
+
+
 #navbar-icon {
-  /* display: block; */
+  /* start off hidden then show on mobile screens */
+  display: none;
+
+  /* positions navbar icon */
   position: absolute;
   right: 10px;
   top: 10px;
@@ -64,5 +77,21 @@ container is set to 480px*/
     background-color: #555;
     height: 500px;
     color: white;
+  }
+
+  #navbar-icon {
+    display: block;
+
+  }
+
+  #navbar-items {
+    display: none;
+  }
+
+
+  li:hover{
+    display: block;
+    /* each line! */
+    background-color: #EAEAEA;
   }
 }
