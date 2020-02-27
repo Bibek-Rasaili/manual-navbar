@@ -106,6 +106,8 @@ container is set to 480px*/
 
   nav {
     display: block;
+  /* BIBEK - Portfolio needed left-aligned text
+  as the icon is absolute (floating) */
   }
   .branding {
     display: block;
