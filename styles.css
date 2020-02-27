@@ -31,9 +31,9 @@ nav {
   display: flex;
 }
 
-/* hides the nav-item to start */
-#navbar-items {
 
+#navbar-items {
+  /* display: flex; */
 }
 
 ul a {
@@ -66,9 +66,26 @@ ul a {
   font-size: 17px;
 }
 
+/* @media screen and (min-width: 601px) {
+/* not sure if screen and is neccessary here
+  #navbar-items {
+    display: flex;
+  }
+} */
+
+
+/* Max-DEVICE-width: 600px instead of max-width 600px
+  current solution for time being for deployment
+
+  - continue working on the bug where if max-width and icon clicked and enlarged
+  nav list(items) disappears - suspect js?
+
+  1.  current solution, icon for phone.
+  2.  flex - block for changing browser width (add margin between branding and nav items)
+*/
 /* stimulates mobile at 600px screen size, width of
 container is set to 480px*/
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
   .mobile-container {
     max-width: 480px;
     margin: auto;
@@ -77,20 +94,19 @@ container is set to 480px*/
     height: 500px;
     color: white;
   }
+  /* mobile container */
 
   #navbar-icon {
     display: block;
-
   }
-
   #navbar-items {
     display: none;
   }
+  /* hide list and show icon */
 
   nav {
     display: block;
   }
-
   .branding {
     display: block;
   }
